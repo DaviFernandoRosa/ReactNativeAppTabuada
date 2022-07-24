@@ -7,19 +7,16 @@ import TelaTabuada from "./src/screens/TelaTabuada"
 import TelaRespostaCorreta from "./src/screens/TelaRespostaCorreta"
 import TelaRespostaErrada from "./src/screens/TelaRespostaErrada"
 
-const Navegacao = createStackNavigator()
+const Stack = createStackNavigator()
 
 const App = () => (
   <NavigationContainer>
-    <Navegacao.Navigator screenOptions={{ headerShown: false }}>
-      <Navegacao.Screen name="Inicio" component={TelaInicio} />
-      <Navegacao.Screen name="Tabuada" component={TelaTabuada} />
-      <Navegacao.Screen
-        name="RespostaCorreta"
-        component={TelaRespostaCorreta}
-      />
-      <Navegacao.Screen name="RespostaErrada" component={TelaRespostaErrada} />
-    </Navegacao.Navigator>
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="Inicio" component={TelaInicio} />
+      <Stack.Screen name="Tabuada" component={TelaTabuada} />
+      <Stack.Screen name="RespostaCorreta" component={TelaRespostaCorreta} />
+      <Stack.Screen name="RespostaErrada" component={TelaRespostaErrada} />
+    </Stack.Navigator>
   </NavigationContainer>
 )
 
