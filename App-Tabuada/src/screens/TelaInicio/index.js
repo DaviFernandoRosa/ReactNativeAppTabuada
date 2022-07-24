@@ -4,7 +4,7 @@ import { View, Text, Button, TextInput, ImageBackground } from "react-native"
 import { validarResposta, gerarNumero } from "./funcoes"
 
 import estilo from "./estilo"
-import fundo from "../assets/fundo.png"
+import fundo from "../assets/fundo.jpg"
 
 const TelaInicio = props => {
   const [primeiroNumero, setPrimeiroNumero] = useState(1)
