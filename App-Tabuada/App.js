@@ -2,10 +2,10 @@ import React from "react"
 import { NavigationContainer } from "@react-navigation/native"
 import { createStackNavigator } from "@react-navigation/stack"
 
-import TelaInicio from "./telas/TelaInicio"
-import TelaTabuada from "./telas/TelaTabuada"
-import TelaRespostaCorreta from "./telas/TelaRespostaCorreta"
-import TelaRespostaErrada from "./telas/TelaRespostaErrada"
+import TelaInicio from "./src/screens/TelaInicio"
+import TelaTabuada from "./src/screens/TelaTabuada"
+import TelaRespostaCorreta from "./src/screens/TelaRespostaCorreta"
+import TelaRespostaErrada from "./src/screens/TelaRespostaErrada"
 
 const Navegacao = createStackNavigator()
 
