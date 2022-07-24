@@ -1,16 +1,16 @@
-import React from 'react';
-import { Button, View, Text, ImageBackground } from 'react-native';
+import React from "react"
+import { Button, View, Text, ImageBackground } from "react-native"
 
-import errou from '../../assets/errou.jpg';
-import estilo from './estilo';
+import errou from "../assets/errou.jpg"
+import estilo from "./estilo"
 
-const TelaRespostaErrada = (props) => {
+const TelaRespostaErrada = props => {
   const abrirTelaTabuada = () => {
-    props.navigation.navigate('Tabuada');
+    props.navigation.navigate("Tabuada")
   }
 
   const voltar = () => {
-    props.navigation.goBack();
+    props.navigation.goBack()
   }
 
   return (
@@ -22,11 +22,15 @@ const TelaRespostaErrada = (props) => {
 
         <View style={estilo.boxBotoes}>
           <View style={estilo.boxBotao}>
-            <Button title="Ver tabuada" onPress={abrirTelaTabuada} color="#1f4f66"/>
+            <Button
+              title="Ver tabuada"
+              onPress={abrirTelaTabuada}
+              color="#1f4f66"
+            />
           </View>
 
           <View style={estilo.boxBotao}>
-            <Button title="Tentar outro" onPress={voltar} color="#a0df52"/>
+            <Button title="Tentar outro" onPress={voltar} color="#a0df52" />
           </View>
         </View>
       </View>
@@ -34,4 +38,4 @@ const TelaRespostaErrada = (props) => {
   )
 }
 
-export default TelaRespostaErrada;
+export default TelaRespostaErrada
